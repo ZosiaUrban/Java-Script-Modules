@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="Confirmdelete()">Delete Items</button>
+<div id="result"></div> <!-- Added div to show result message -->
+
+<script>
+    function Confirmdelete(){
+        let userConfirmed = confirm("Are you sure you want to delete these items?");
+        if (userConfirmed){
+            document.getElementById("result").innerText = "Item deleted successfully";
+        } else {
+            document.getElementById("result").innerText = "Action canceled";
+        }
+    }
+</script>
+
+</body>
+</html>

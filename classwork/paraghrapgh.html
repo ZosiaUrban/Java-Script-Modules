@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let paragraphToRemove = content.querySelector("p");
+if (paragraphToRemove) {
+    content.removeChild(paragraphToRemove); 
+}
+console.log(content.innerHTML);
+content.innerHTML = "<h2>Updated Content</h2><p>This is a new paragraph.</p>";
+content.innerText = "This is updated plain text content.";
+
+</script>
+</body>
+</html>
