@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Series Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    #results {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    article {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    h2 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    div {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>TV Series Finder</h1>
+  <form id="search-form">
+    <input id="query" name="q" type="text" placeholder="Enter TV series name" required>
+    <button type="submit">Search</button>
+  </form>
+  <div id="results"></div>
+
+  <script src="m4ex1.js"></script>
+</body>
+</html>
